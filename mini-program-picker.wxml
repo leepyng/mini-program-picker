@@ -1,0 +1,25 @@
+<view class="picker-modal" >
+	<view class="picker-modal-box">
+		<view class="picker-modal-form">
+			<view class="cancel" bindtap="close">取消</view>
+			<view class="ok" bindtap="bindComfirm">确定</view>
+		</view>
+		<view  class="picker-view-input-box" wx:if="{{isInputShow}}">
+			<input type="text" name="" class="picker-view-input" bindinput="inputTyping" bindconfirm="reSetKeyName" confirm-type="search"  />
+		</view>
+
+		<picker-view indicator-style="height: 50px;" class="picker-view-box" value="{{value}}" bindchange="bindChange" >
+		    <picker-view-column>
+		      	<view wx:for="{{array}}" class="picker-view-text" wx:key="{{index}}" >{{item[itemName[0]]}}</view>
+		    </picker-view-column>
+		    <picker-view-column wx:if="{{array[value[0]][child]}}">
+		      	<view wx:for="{{array[value[0]][child]}}" class="picker-view-text" wx:key="{{index}}" >{{item[itemName[1]]}}</view>
+		    </picker-view-column>
+		    <picker-view-column wx:if="{{array[value[0]][child][value[1]][child]}}">
+		      	<view wx:for="{{array[value[0]][child][value[1]][child]}}" class="picker-view-text" wx:key="{{index}}" >{{item[itemName[2]]}}</view>
+		    </picker-view-column>
+	  	</picker-view>
+		
+	</view>
+	
+</view>
