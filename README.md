@@ -13,7 +13,7 @@ a pikcer component for mini program to select
     <mp-picker wx:if="{{isPickerShow}}"
      value="{{[0,0,0]}}" 
      array="{{addressArray}}" 
-     child="goverenedRegions"
+     child="childName"
      itemName="{{['name','name','name']}}"
      bind:bindComfirm="bindPickerComfirm">
     </mp-picker>
