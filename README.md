@@ -3,11 +3,13 @@ a pikcer component for mini program to select
 
 # 使用方法
 	1、.json 文件引入该文件
+
    "usingComponents":{
         "mp-picker": "./components/picker/picker"
     }
-    
+
     2、.wxml 文件引入组件，并填写配置信息
+    
     <mp-picker wx:if="{{isPickerShow}}" value="{{[0,0,0]}}" array="{{addressArray}}" child="goverenedRegions" itemName="{{['name','name','name']}}"  bind:bindComfirm="bindPickerComfirm"></mp-picker>
 
     3、参数解释
