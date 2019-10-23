@@ -14,7 +14,8 @@ a pikcer component for mini program to select
      value="{{[0,0,0]}}" array="{{addressArray}}" 
      child="goverenedRegions"
      itemName="{{['name','name','name']}}"
-     bind:bindComfirm="bindPickerComfirm"></mp-picker>
+     bind:bindComfirm="bindPickerComfirm">
+    </mp-picker>
 
 
     3、参数解释
