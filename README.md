@@ -1,5 +1,5 @@
 # mini-program-picker
-a pikcer component for mini program to select 
+A pikcer component for mini program to select 
 
 # 使用方法
 	1、.json 文件引入该文件
